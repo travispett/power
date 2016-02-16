@@ -1,0 +1,64 @@
+{
+  "name": "power",
+  "version": "0.0.1",
+  "description": "Workout tracking application.",
+  "homepage": "https://github.com/travispett/power",
+  "author": {
+    "name": "Travis Pett",
+    "email": "travispett@gmail.com",
+    "url": "http://travispett.me"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "trails",
+    "trailsjs"
+  ],
+  "dependencies": {
+    "jade": "^1.11.0",
+    "lodash": "^3.10",
+    "rc": "^1.1",
+    "trailpack-core": "1.0.0-beta-3",
+    "trailpack-footprints": "^1.0.0-beta-3",
+    "trailpack-hapi": "^1.0.0-beta-2",
+    "trailpack-repl": "1.0.0-alpha-3",
+    "trailpack-router": "^1.0.0-beta-4",
+    "trailpack-waterline": "^1.0.0-alpha-6",
+    "trails": "latest",
+    "trails-controller": "1.0.0-beta-2",
+    "trails-model": "1.0.0-beta-2",
+    "trails-policy": "^1.0.1",
+    "trails-service": "1.0.0-beta-2",
+    "winston": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint-config-trails": "latest",
+    "eslint": "^2.0.0",
+    "mocha": "^2.3",
+    "supertest": "^1.1"
+  },
+  "bundledDependencies": [
+    "lodash",
+    "rc",
+    "trailpack-core",
+    "trailpack-hapi",
+    "trailpack-repl",
+    "trailpack-router",
+    "trails",
+    "waterline-sqlite3",
+    "winston"
+  ],
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "repository": "https://github.com/travispett/power.git",
+  "license": "MIT"
+}
