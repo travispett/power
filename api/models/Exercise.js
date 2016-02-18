@@ -18,7 +18,7 @@ module.exports = {
       type: 'string'
     },
     title: {
-      type: 'string',
+      type: 'string'
       //enum: exercises
     },
     workout: {
