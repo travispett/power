@@ -1,10 +1,11 @@
 'use strict';
 
 const Model = require('trails-model');
+const exercises = require('./exercises-enum').exercises;
 
 /**
  * @module Exercise
- * @description Model for a specific exercise within a workout.
+ * @description A specific exercise within a workout.
  */
 module.exports = class Exercise extends Model {
 
@@ -13,8 +14,16 @@ module.exports = class Exercise extends Model {
 
   static schema () {
     return {
-      title: {
+      sets: {
+        collection: 'Set',
+        via: 'exercise'
+      },
+      time: {
         type: 'string'
+      },
+      title: {
+        type: 'string',
+        enum: exercises
       },
       workout: {
         model: 'Workout'
