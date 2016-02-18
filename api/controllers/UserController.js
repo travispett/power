@@ -1,12 +1,8 @@
-'use strict';
-
-const Controller = require('trails-controller');
+"use strict";
 
 /**
- * @module UserController
- * @description Generated Trails.js Controller.
+ * UserController
+ * @description :: Server-side logic for manage users
  */
-module.exports = class UserController extends Controller {
 
-};
-
+module.exports = {};

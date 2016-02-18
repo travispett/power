@@ -1,18 +1,22 @@
+"use strict";
+
 /**
- * Policies Configuration
- * (app.config.footprints)
+ * Policy Mappings
  *
- * Define which prerequisites a request must pass before reaching the intended
- * controller action. By default, no policies are configured for controllers or
- * footprints, therefore the request always will directly reach the intended
- * handler.
+ * Policies are simple functions which run before your controllers.
+ * You can apply one or more policies to a given controller, or protect
+ * its actions individually.
  *
- * @see http://trailsjs.io/doc/config/policies
+ * Any policy file (e.g. `api/policies/authenticated.js`) can be accessed
+ * below by its filename, minus the extension, (e.g. "authenticated")
  */
+
 module.exports = {
+  policies: {
+    '*': ['isAuthenticated'],
 
-  //UserController: {
-  //  '*': ['sessionAuth']
-  //}
-
+    AuthController: {
+      '*': true
+    }
+  }
 };

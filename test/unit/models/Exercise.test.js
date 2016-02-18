@@ -1,10 +1,11 @@
-'use strict'
-/* global describe, it */
+"use strict";
 
-const assert = require('assert')
+const assert = require('chai').assert;
+const Model = require('../../../api/models/Exercise');
+const Fixture = require('../../fixtures/ExerciseFixture');
 
-describe('Exercise Model', () => {
-  it('should exist', () => {
-    assert(global.app.api.models['Exercise'])
-  })
-})
+describe('models:Exercise', () => {
+  it('Should be tested', () => {
+    assert(false);
+  });
+});

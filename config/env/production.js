@@ -1,35 +1,13 @@
-const winston = require('winston');
+"use strict";
+
+/**
+ * Production environment settings
+ * @description :: This section overrides all other config values ONLY in production environment
+ */
 
 module.exports = {
-
-  trailpack: {
-    disabled: [
-      'repl'
-    ]
-  },
-
+  port: 80,
   log: {
-    logger: new winston.Logger({
-      level: 'info',
-      exitOnError: false,
-      transports: [
-        new winston.transports.Console({
-          timestamp: true
-        }),
-        new winston.transports.File({
-          name: 'info-file',
-          level: 'info',
-          filename: 'trails-info.log',
-          timestamp: true
-        }),
-        new winston.transports.File({
-          name: 'error-file',
-          level: 'error',
-          filename: 'trails-error.log',
-          timestamp: true
-        })
-      ]
-    })
+    level: 'info'
   }
-
 };

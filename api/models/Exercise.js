@@ -1,33 +1,34 @@
-'use strict';
-
-const Model = require('trails-model');
-const exercises = require('./exercises-enum').exercises;
+"use strict";
 
 /**
- * @module Exercise
- * @description A specific exercise within a workout.
+ * Exercise
+ * @description :: Model for storing Exercise records
  */
-module.exports = class Exercise extends Model {
 
-  static config () {
-  }
+module.exports = {
+  schema: true,
 
-  static schema () {
-    return {
-      sets: {
-        collection: 'Set',
-        via: 'exercise'
-      },
-      time: {
-        type: 'string'
-      },
-      title: {
-        type: 'string',
-        enum: exercises
-      },
-      workout: {
-        model: 'Workout'
-      }
+  attributes: {
+    // Fill your attributes here
+    sets: {
+      collection: 'Set',
+      via: 'exercise'
+    },
+    time: {
+      type: 'string'
+    },
+    title: {
+      type: 'string',
+      //enum: exercises
+    },
+    workout: {
+      model: 'Workout'
+    },
+    toJSON() {
+      return this.toObject();
     }
-  }
+  },
+
+  beforeUpdate: (values, next) => next(),
+  beforeCreate: (values, next) => next()
 };

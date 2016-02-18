@@ -2,7 +2,7 @@
 
 Feature development is tracked with a [Taiga Kanban board.](https://tree.taiga.io/project/travispett-power/kanban)
 
-Back-end is in [Trails.js](https://github.com/trailsjs/trails)
+Back-end is in [Sails.js](http://sailsjs.org/)
 
 Front-end is [React Native](https://facebook.github.io/react-native/) + [Redux](https://github.com/reactjs/redux)
 
