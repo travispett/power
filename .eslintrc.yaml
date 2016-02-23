@@ -1,6 +1,8 @@
 ---
   extends:
-  - defaults/configurations/airbnb/es6
+  - "defaults/configurations/airbnb/es6"
+  env:
+    mocha: true
   rules:
     strict:
       - 2
@@ -9,6 +11,23 @@
       - 2
       - "never"
     spaced-comment:
+      - 0
+    max-len:
+      - 1
+      - 120
+    no-unused-vars:
+      - 1
+    space-before-function-paren:
+      - 0
+    no-else-return:
+      - 0
+    jsx-quotes:
+      - 0
+    no-use-before-define:
+      - 0
+    no-trailing-spaces:
+      - 1
+    no-param-reassign:
       - 0
 
 
