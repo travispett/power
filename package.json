@@ -1,6 +1,6 @@
 {
   "name": "power",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "app.js",
   "dependencies": {
     "bluebird": "^3.3.1",
@@ -42,6 +42,7 @@
     "eslint": "^2.1.0",
     "eslint-config-defaults": "^9.0.0",
     "eslint-plugin-filenames": "^0.2.0",
+    "eslint-plugin-react": "^4.0.0",
     "istanbul": "0.4.2",
     "mocha": "2.3.4",
     "sails-memory": "0.10.5",
