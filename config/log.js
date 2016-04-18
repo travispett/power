@@ -11,7 +11,7 @@ module.exports = {
      * Winston logging level for the console transport
      * @type {String}
      */
-    level: 'verbose',
+    level: 'silly',
 
     /**
      * Outputs the timestamp in the console transport

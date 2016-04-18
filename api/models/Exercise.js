@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Exercise
  * @description :: Model for storing Exercise records
@@ -11,8 +9,7 @@ module.exports = {
   attributes: {
     // Fill your attributes here
     sets: {
-      collection: 'Set',
-      via: 'exercise'
+      model: 'Set'
     },
     time: {
       type: 'string'

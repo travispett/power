@@ -19,6 +19,12 @@ module.exports = {
     reps: {
       type: 'integer'
     },
+    sets: {
+      type: 'integer',
+      defaultsTo() {
+        return 1;
+      }
+    },
     weight: {
       type: 'float'
     },

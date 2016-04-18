@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Workout
  * @description :: Model for storing Workout records
@@ -16,7 +14,7 @@ module.exports = {
       }
     },
     exercises: {
-      type: 'Exercise',
+      collection: 'Exercise',
       via: 'workout'
     },
     title: {
